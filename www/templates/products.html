@@ -1,0 +1,14 @@
+<ion-view view-title="{{mavia}}">
+  <ion-content>
+<h1>Product List     <button class="button button-positive" style="float: right" ng-click="go()"> Booking order</button></h1>
+    <ion-list ng-repeat="a in productArray">
+
+      <ion-item>
+        {{a.product}}
+      </ion-item>
+      <ion-item>
+        {{a.product2}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,25 @@
+<ion-view view-title="Booking Order">
+  <ion-content>
+    <!--<h1>Playlist</h1>-->
+
+    <form>
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Product</span>
+          <input type="text" placeholder="Product Name" ng-model="order.msg">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Price</span>
+          <input type="number" placeholder="How much you want" ng-model="order.price">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Your Name </span>
+          <input type="text"  placeholder="What can i called you" required="required" ng-model="order.name">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" ng-click="orderBookin()"ui-sref="app.products">Submit</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
